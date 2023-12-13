@@ -35,15 +35,121 @@
 	
 </head>
 <style>
-  body{background: linear-gradient(to bottom, #cc6600 50%, #ccff99 100%);
+  body{background: url(https://images.unsplash.com/photo-1601662528567-526cd06f6582?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTEzfHxjb2RpbmclMjB3YWxscGFwZXIlMjBpbiUyMHdoaXRlfGVufDB8fDB8fHww);
 } 
   /* hero background image */
 .bgimage {
-    height:50vh;
-    background: url(/images.jpeg)  ;
+    height:100vh;
+    background: url(https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y29kaW5nfGVufDB8fDB8fHww)  ;
     background-size:cover;
     position:relative;
 }
+.static-container{
+    display: inline-block;
+    margin: 20px;
+    font-style: italic;
+    font-size: 500px;
+    width: 600px;
+   
+    background-image: url(https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y29kaW5nfGVufDB8fDB8fHww);
+    background-size: 300%;
+   
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+   
+    animation: color 3s infinite alternate ease-in;
+}
+.static{
+    font-size: 150px;
+}
+
+
+.moving-text-container{
+    display: inline-block;
+    height: 57px;
+    width: 500px;
+    backface-visibility: hidden;
+   
+    font-size: 37px;
+    color: darkblue;
+   
+    position: absolute;
+    top: 130px;
+   
+    overflow: hidden;
+}
+
+.moving-text-container  p{
+    padding: 0;
+    margin: 0px;
+}
+
+.moving-text{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    letter-spacing: 3px;
+    position: absolute;
+    animation: upDown 5s infinite;
+}
+@keyframes upDown{
+   
+    0% {
+       top: 5px;
+    }
+   
+    10%{
+        top: 5px;
+    }
+   
+    20%{
+        top: -50px;
+    }
+   
+    30%{
+        top: -50px;
+    }
+   
+    40%{
+        top: -105px;
+    }
+   
+    50%{
+        top: -105px;
+    }
+   
+     60%{
+        top: -160px;
+    }
+   
+    70%{
+        top: -160px;
+    }
+   
+    80%{
+        top: 30px;
+    }
+   
+    85% {
+        top: 5px;
+    }
+   
+    100% {
+        top: 5px;
+    }
+   
+}
+
+@keyframes color{
+   
+    0% {
+        background-position: left;
+    }
+   
+    100% {
+        background-position: right;
+    }
+} 
 /* text css above hero image*/
 .hero_title {
     font-size: 4.5rem;
@@ -158,14 +264,20 @@ window.onscroll = function() {
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
                      <li class="nav-item">
                         <a class="nav-link" href="#resume">Resume</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#Achivements">Achivements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Work">Work</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -176,9 +288,11 @@ window.onscroll = function() {
         </div>
     </nav>
     
+ 
+                   
     
     <!-- main banner -->
-    <section class="bgimage" id="home">
+    <!--section class="bgimage" id="home">
         <div class="container-fluid">
             <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
@@ -189,15 +303,36 @@ window.onscroll = function() {
             </div>
             </div>
         </div>
-    </section>
+    </section-->
+    <div class="container" id="top">
+        <div class="row">
+            <div class="col-md-12">
+<div class = 'main-container '>
+    <div class = 'static-container'>
+        <h1 class = 'static'> Hi, I am </h1>
+    </div>
+   
+    <div class = 'moving-text-container'>
+        <div class = 'moving-text'>
+            <p> krishna kumar .</p>
+            <p> a devloper.</p>
+            <p> a coder. </p>
+            <p> learning web. </p>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
     
     <!-- about section-->
     <section id="about">
         <div class="container mt-4 pt-4">
-            <h1 class="text-center">About Me</h1>
+            <h1 class="text-center">About Me  </h1>
             <div class="row mt-4">
                 <div class="col-lg-4">
-                    <img src="/IMG_20230907_144603.jpg" class= "imageAboutPage" alt="">
+                    <img src="1.jpg" class= "imageAboutPage" alt="">
                 </div>
 
                 <div class="col-lg-8">
@@ -217,7 +352,7 @@ window.onscroll = function() {
 
             
                     <div class="row mt-3">
-                        <p> Hello, I’m Krishna . I’m a student living in Bhagalpur, Bihar. I am a fan of web development, video games, and football. I’m also interested in animals and cycling. You can hire me with a click on the button above
+                        <p> <h3>I’m Krishna and I'm a Web Devloper <br> & Content Writer </h3> <br> Hi, my self Krishna kumar and i'm currently pursing a diploma course in Computer science fron Patna. I am a web diveloper , content weiteer , graphic designer as well as part time Freelancer , I have a good working  experience at khabai Tech-Hagipur as a web development intern. <br> Thanks!
                         </p>
                     </div>
                 </div>
@@ -316,17 +451,20 @@ window.onscroll = function() {
             </div>
         </div>
     </section>
+    <br>
+    <br>
     
     
-    
-    <!-- portfolio section-->
-    <section id="portfolio">
+    <!-- Achivements  section-->
+    <section id="Achivements">
         <div class="container mt-3">
-            <h1 class="text-center">Portfolio</h1>
+            <h1 class="text-center">Achivements</h1>
             <div class="row">
+                <br>
+                <br>
                 <div class="col-lg-4 mt-4">
                     <div class="card">
-                        <img class="card-img-top" src="/IMG-20231121-WA0006.jpg " alt="Card image" style="width:100%">
+                        <img class="card-img-top" src="2.jpg " alt="Card image" style="width:100%">
                         <div class="card-body">
                             <h4 class="card-title">Certificate in Multilingual Office Automation </h4>
                             <p class="card-text">I have also completed a course in computer science which is Multilingual Office Automation<br>Place- Patiala<br>year-2019</p>
@@ -339,7 +477,7 @@ window.onscroll = function() {
 
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent">
-                        <img class="card-img-top" src= "/IMG-20231121-WA0007.jpg " alt="Card image" style="width:100%">
+                        <img class="card-img-top" src= "4.jpg " alt="Card image" style="width:100%">
                         <div class="card-body">
                             <h4 class="card-title">Certificate in  Computer Basic And Multilingual Language</h4>
                             <p class="card-text">I have also done the course in computer basic and Multilingual  technology<br>Place- Patiala<br>year-2018</p>
@@ -352,7 +490,7 @@ window.onscroll = function() {
 
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent">
-                        <img class="card-img-top" src="/IMG-20231121-WA0008.jpg " alt="Card image" style="width:100%">
+                        <img class="card-img-top" src="3.jpg " alt="Card image" style="width:100%">
                         <div class="card-body">
                             <h4 class="card-title">Certificate in English and Hindi Typing</h4>
                             <p class="card-text">I have done both hindi and English typing.<br>English -35wpm<br>Hindi -30wpm
@@ -387,13 +525,101 @@ window.onscroll = function() {
 </div>
 	</div>
 </div>
-
-
-            <br>
+ <br>
            
     </section>
     
+
+     <!-- Gallery section-->
+    <section id="gallery">
+        <div class="container mt-3">
+            <h1 class="text-center">Gallery</h1>
+            <br>
+            <br>
+        <div class="ecommerce-gallery" data-mdb-zoom-effect="true" data-mdb-auto-height="true">
+  <div class="row py-3 shadow-5">
+    <div class="col-12 mb-1">
+      <div class="lightbox">
+        <img
+          src="1.jpg"
+          alt="Gallery image 1"
+          class="ecommerce-gallery-main-img active w-100"
+        />
+      </div>
+    </div>
+    <div class="col-3 mt-1">
+      <img
+        src="6.jpg"
+        data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/14a.webp"
+        alt="Gallery image 1"
+        class="active w-100"
+      />
+    </div>
+    <div class="col-3 mt-1">
+      <img
+        src="7.jpg"
+        data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/12a.webp"
+        alt="Gallery image 2"
+        class="w-100"
+      />
+    </div>
+    <div class="col-3 mt-1">
+      <img
+        src="8.jpg"
+        data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/13a.webp"
+        alt="Gallery image 3"
+        class="w-100"
+      />
+    </div>
+    <div class="col-3 mt-1">
+      <img
+        src="10.jpg"
+        data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/15a.webp"
+        alt="Gallery image 4"
+        class="w-100"
+      />
+    </div>
+  </div>
+</div>
+<br>
+<br> 
+<br>
+
+        <!---Work section--->
+        <section id="Work">
+    <h1 class="my-4 text-center text-lg-left">Some Work done By Me</h1>
+    <div class="row gallery">
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a href="https://picsum.photos/940/650?random=1">
+                <figure><img class="img-fluid img-thumbnail" src="16.jpg" alt="Random Image"></figure>
+            </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a href="https://picsum.photos/940/650?random=2">
+                <figure><img class="img-fluid img-thumbnail" src="15.jpg" alt="Random Image"></figure>
+            </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a href="https://picsum.photos/940/650?random=3">
+                <figure><img class="img-fluid img-thumbnail" src="18.jpg" alt="Random Image"></figure>
+            </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a href="https://picsum.photos/940/650?random=4">
+                <figure><img class="img-fluid img-thumbnail" src="17.jpg" alt="Random Image"></figure>
+            </a>
+        </div>
+
+       </div>
+   </section>
+    <br> <br>
+
+
     
+
     <!-- contact section-->
     <section id="contact">
         <div class="container mt-3 contactContent">
@@ -421,7 +647,8 @@ window.onscroll = function() {
             </div>
         </div>
     </section>
-    
+    <br>
+
     <!-- footer section-->
     <footer id="footer">
         <div class="container-fluid">
